@@ -1,0 +1,218 @@
+@import 'fonts.css';
+@import 'var.css';
+
+::selection {
+  background-color: rgba(141, 0, 35, 0.7);
+}
+
+body {
+    color:              white;
+    background-color:   black;
+    margin:             0;
+}
+ul {
+    list-style-type:    none;
+}
+header{
+    height:             95vh;
+    max-height:         56.25vw;
+    width:              100vw;
+    text-align:         center;
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
+    gap:                1cqw;
+}
+
+header > h1 {
+    font-family:        kraft;
+    color:              rgba(255, 255, 255, 0.95);
+    font-size:          18cqw;
+    margin:             0;
+}
+
+header > h2 {
+    font-family:        mono;
+    color:              rgba(255, 255, 255, 0.95);
+    font-size:          2cqw;
+    margin:             0;
+}
+
+.chapter-0 {
+    background:         url(../pics/bgch0.png);
+    background-size:    100% auto;
+}
+
+#divider-tape {
+    background:         url(../pics/tapedivider.png);
+    width:              100vw;
+    margin:             0;
+    height:             6vw;
+    transform:          translate(0, -4vw) rotate(1deg);
+    background-size:    cover;
+    /* image-rendering:    crisp-edges; */
+}
+main {
+    width:              95vw;
+    margin:             0;
+    margin-top:         -6vw;
+    margin-inline:      auto;
+}
+h1 {
+    font-family:        unbounded;
+    margin:             1cqw;
+    font-size:          2.3cqw;
+}
+.about {
+    width:              94vw;
+    margin-inline:      auto;
+    margin-bottom:      0;
+}
+.about > p {
+    height:             12vw;
+    width:              67%;
+    border-inline:      0.2cqw dashed rgb(12, 12, 12);
+    font-size:          1.2cqw;
+    font-family:        mono;
+    padding-inline:     2cqw;
+    box-sizing:         border
+}
+.fracs {
+    display:            flex;
+    flex-direction:     row;
+    justify-content:    space-between;
+    height:             16vw;
+}
+.fracs>div {
+    flex-grow:          1;
+    width:              50%;
+    transition:         all 1s;
+}
+.fracs>div>h2 {
+    font-size:          2cqw;
+    text-shadow:        0 0 10px black;
+}
+.fracs>div>p {
+    font-size:          1cqw;
+    text-shadow:        0 0 10px black;
+    Width:              32vw;
+}
+.fracs>h3 {
+    width:              10%;
+    height:             6vw;
+    margin-top:         5vw;
+    font-family:        zozh;        
+    font-size:          3cqw;
+    text-align:         center;
+    color:              rgba(255, 255, 255, 0.756);
+}
+.fracs > div:hover {
+    width:                  35%;
+}
+#phobos {
+    background:         linear-gradient(to right, rgb(25, 9, 40), transparent), 
+                        url(../pics/phobos-beta-logo.png);
+    background-size:    auto, auto 120%;
+    background-repeat:  no-repeat;
+    background-position:center;
+    text-align:         left;
+    padding-left:       2vw;
+    font-family:        mono;
+}
+#phobos:hover {
+    background-size:        auto, auto 130%;
+}
+#offsprings {
+    background:         linear-gradient(to left, rgb(7, 18, 36), transparent), 
+                        url(../pics/offsprings-beta-logo.png);
+    background-size:    auto, auto 110%;
+    background-repeat:  no-repeat;
+    background-position:center;
+    text-align:         right;
+    font-family:        oldsov;
+}
+#offsprings:hover {
+    background-size:        auto, auto 120%;
+}
+#offsprings > h2 {
+    font-size:          1.6cqw;
+    margin-right:       2vw;
+}
+#offsprings > p {
+    font-size:          0.8cqw;
+    margin-left:        auto;
+    margin-right:       2vw;
+    margin-top:         2.3cqw;
+}
+.npcs {
+    height:             16vw;
+    width:              90vw;
+}
+.npcs>ul {
+    width:              100%;
+    height:             100%;
+    display:            flex;
+    flex-direction:     row;
+    overflow:           scroll;
+    scrollbar-color:    rgb(15, 15, 15) black;
+    scrollbar-width:    auto;
+    scrollbar-gutter:   stable both-edges;
+    gap:                1%;
+    justify-content:    space-around;
+    align-items:        center;
+    padding-inline:     2cqw;
+}
+.npcs>ul>li {
+    height:             90%;
+    min-width:          20vw;
+    background-color:   rgb(17, 17, 17);
+    flex-grow:          0;
+    overflow:           hidden;
+    border-radius:      0.3cqw;
+    transition:         transform 0.4s;
+    border:             0.2cqw solid rgb(38, 38, 38);
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+}
+.npcs>ul>li>h2 {
+    font-size:          2cqw;
+    font-family:        patebold;
+    text-align:         center;
+    margin:             0.5cqw;
+}
+.npcs>ul>li>p {
+    font-size:          1cqw;
+    font-family:        mono;
+    text-align:         center;
+    margin:             0;
+}
+.npcs>ul>li:hover {
+    transform:          scale(1.02);
+}
+.npcs>ul>li.offspringsnpc {
+    border:             0.2cqw solid rgb(20, 37, 58);
+    background-color:   rgb(16, 21, 26);
+}
+.npcs>ul>li.phobosnpc {
+    border:             0.2cqw solid rgb(31, 20, 58);
+    background-color:   rgb(20, 14, 31);
+}
+.npcimg {
+    height:             60%;
+    margin-inline:      auto;      
+}       
+.npcs > h4 {
+    width:              40%;
+    font-family:        mono;
+    font-size:          0.7cqw;
+    color:              rgb(40, 40, 40);
+    padding-left:       2cqw;          
+    text-align:         left;
+    margin:             0;
+    position:           absolute;   
+    transform:          translate(0, -1cqw);
+}
+.articles {
+    margin-top:         6%;
+}
