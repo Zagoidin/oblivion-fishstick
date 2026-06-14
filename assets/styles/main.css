@@ -216,3 +216,15 @@ h1 {
 .articles {
     margin-top:         6%;
 }
+#z {
+    pointer-events:     all;
+    height:             auto;
+    font-size:          4cqh;
+    width:              50%;
+    text-align:         center;
+    margin-inline:      auto;
+    margin-bottom:      1%;
+    cursor:             pointer;
+    background-color:   rgba(0, 0, 0, 0.351);
+    border-radius:      20vw;
+} 
