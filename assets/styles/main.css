@@ -87,6 +87,7 @@ h1 {
     flex-grow:          1;
     width:              50%;
     transition:         all 1s;
+    font-family:        mono;
 }
 .fracs>div>h2 {
     font-size:          2cqw;
@@ -117,7 +118,6 @@ h1 {
     background-position:center;
     text-align:         left;
     padding-left:       2vw;
-    font-family:        mono;
 }
 #phobos:hover {
     background-size:        auto, auto 130%;
@@ -129,20 +129,17 @@ h1 {
     background-repeat:  no-repeat;
     background-position:center;
     text-align:         right;
-    font-family:        oldsov;
 }
 #offsprings:hover {
     background-size:        auto, auto 120%;
 }
 #offsprings > h2 {
-    font-size:          1.6cqw;
     margin-right:       2vw;
 }
 #offsprings > p {
-    font-size:          0.8cqw;
     margin-left:        auto;
     margin-right:       2vw;
-    margin-top:         2.3cqw;
+
 }
 .npcs {
     height:             16vw;
@@ -231,7 +228,24 @@ h1 {
 
 @media (orientation: portrait){
     h1 {
-        font-size:     4cqw;
+        font-size:      4cqw;
+    }
+    .about > p {
+        font-size:      2.4cqw;
+        width:          auto;
+        height:         auto;
+    }
+    .fracs {
+        height:         40vh;
+    }
+    .fracs > div > h2 {
+        font-size:  5cqw;
+    }
+    .fracs > div > p {
+        font-size:  2.6cqw;
+    }
+    .fracs > div:hover {
+        width:      50%;
     }
     .npcs>ul{
         flex-wrap:      wrap;

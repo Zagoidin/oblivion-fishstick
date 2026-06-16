@@ -41,6 +41,7 @@ ui > .divider.expendable {
     padding:            0;
     justify-content:    space-around;
     pointer-events:     all;
+    background-color:   rgba(0, 0, 0, 0.27);
 }
 .uibar > li {
     margin:             auto;
