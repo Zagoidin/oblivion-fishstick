@@ -236,7 +236,8 @@ h1 {
         height:         auto;
     }
     .fracs {
-        height:         40vh;
+        min-height:         40vh;
+        height:             fit-content;
     }
     .fracs > div > h2 {
         font-size:  5cqw;
