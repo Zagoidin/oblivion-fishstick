@@ -41,22 +41,27 @@ ui > .divider.expendable {
     padding:            0;
     justify-content:    space-around;
     pointer-events:     all;
-    margin-bottom:      1%;
 }
 .uibar > li {
+    margin:             auto;
     min-width:          10%;
-    max-width:          30%;
-    height:             100%;
+    max-width:          50%;
+    height:             fit-content;
     font-family:        mono;
     text-align:         center;
-    font-size:          max(3vmin, 2vmax);
+    font-size:          max(3vmin, 1.5vmax);
     cursor:             pointer;
     transition:         all 1s;
-    overflow:           hidden;
+    overflow:           visible;
 }
 .uibar > li:hover {
     transform:          scale(1.1);
 }
 .uibar.horizontal {
     flex-direction:     row;
+}
+@media (orientation: portrait){
+    .uibar{
+        padding-bottom:     1%;
+    }
 }

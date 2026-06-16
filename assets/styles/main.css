@@ -228,3 +228,21 @@ h1 {
     background-color:   rgba(0, 0, 0, 0.351);
     border-radius:      20vw;
 } 
+
+@media (orientation: portrait){
+    h1 {
+        font-size:     4cqw;
+    }
+    .npcs>ul{
+        flex-wrap:      wrap;
+        height:         auto;
+        gap:            1vh;
+        width:          80%;
+        margin-inline:  10%;
+        overflow:       visible;
+    }
+    .npcs>ul>li{
+        height:         14vh;
+        aspect-ratio:   4 / 5;
+    }
+}
