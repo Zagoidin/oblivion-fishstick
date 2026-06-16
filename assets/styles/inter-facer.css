@@ -1,0 +1,62 @@
+@import url(fonts.css);
+
+ui {
+    display:            flex;
+    flex-direction:     column;
+    position:           fixed;
+    
+    width:              96vw;
+    height:             96vh;
+    top:                2vh;
+    left:               2vw;
+    border:             0.1vmax solid white;
+    border-image:       linear-gradient(20deg, white 20%, rgba(255, 255, 255, 0.3), white 80%) 1;
+    box-shadow:         0 0 4px 40vW rgba(0, 0, 0, 0.6);
+
+    margin:             0;
+    pointer-events:     none;
+}
+ui > .divider {
+    min-height:         2%;
+    width:              98%;
+    margin:             0;
+    margin-inline:      auto;
+    border:             0.2vmax solid rgba(255, 255, 255, 0.05)
+}
+ui > .divider.expendable {
+    flex-grow:          1;
+}
+.uiheader {
+    font-family:        unbounded;
+    font-size:          max(2vmin, 1vmax);
+    margin-inline:      auto;
+}
+.uibar {
+    width:              99%;
+    aspect-ratio:       32 / 1;
+    display:            flex;
+    list-style-type:    none;
+    margin:             0;
+    margin-inline:      auto;
+    padding:            0;
+    justify-content:    space-around;
+    pointer-events:     all;
+    margin-bottom:      1%;
+}
+.uibar > li {
+    min-width:          10%;
+    max-width:          30%;
+    height:             100%;
+    font-family:        mono;
+    text-align:         center;
+    font-size:          max(3vmin, 2vmax);
+    cursor:             pointer;
+    transition:         all 1s;
+    overflow:           hidden;
+}
+.uibar > li:hover {
+    transform:          scale(1.1);
+}
+.uibar.horizontal {
+    flex-direction:     row;
+}
